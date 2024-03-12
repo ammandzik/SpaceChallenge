@@ -6,7 +6,23 @@ import java.io.File;
 
 public class Simulation {
 
-    public static void loadItems () {
+
+    public static void loadItems () throws FileNotFoundException {
+
+        List <String> phase1 = new ArrayList<>();
+
+
+        Scanner itemsFile1 = new Scanner(new File("/home/amanda/Desktop/Phase_1"));
+
+
+        while (itemsFile1.hasNext()) {
+            phase1.add(itemsFile1.nextLine());
+            System.out.println(itemsFile1.nextLine());
+
+        }
+
+
+
 
     }
 
