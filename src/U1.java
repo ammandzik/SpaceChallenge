@@ -1,22 +1,22 @@
 public class U1 extends Rocket {
 
-    int cost = 10000000;
-    int rocketWeight = 10000;
-    int maxWeight = 18000;
+    U1 () {
 
-    int currentWeight;
-
-    double chanceOfExplosion;
-    double chanceOfLanding;
+        setCost(100000);
+        setWeight(10000);
+        setMaxWeight(18000);
+        setCurrentWeight(10000);
 
 
-    public static boolean launch () {
-
-
-        return true;
     }
 
-    public static boolean land () {
+    public  boolean launch () {
+
+        return true;
+
+    }
+
+    public  boolean land () {
 
         return true;
 

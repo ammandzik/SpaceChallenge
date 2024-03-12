@@ -7,23 +7,20 @@ import java.io.File;
 public class Simulation {
 
 
-    public static void loadItems () throws FileNotFoundException {
+    // creating arraylist of items from textfile
 
-        List <String> phase1 = new ArrayList<>();
+    ArrayList <Item> loadItems () throws FileNotFoundException {
 
+        ArrayList <Item> phase1 = new ArrayList<>();
 
         Scanner itemsFile1 = new Scanner(new File("/home/amanda/Desktop/Phase_1"));
 
 
-        while (itemsFile1.hasNext()) {
-            phase1.add(itemsFile1.nextLine());
-            System.out.println(itemsFile1.nextLine());
+//        while (itemsFile1.hasNext()) {
+//
+//        }
 
-        }
-
-
-
-
+        return phase1;
     }
 
     public static void loadU1 (){

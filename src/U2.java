@@ -1,23 +1,26 @@
 public class U2 extends Rocket {
 
-    int cost = 12000000;
-    int rocketWeight = 18000;
-    int maxWeight = 29000;
+    U2 () {
 
-    int currentWeight;
+        setCost(120000);
+        setWeight(18000);
+        setMaxWeight(29000);
+        setCurrentWeight(18000);
 
-    double chanceOfExplosion;
-    double chanceOfLanding;
+    }
 
-    public static boolean launch () {
+
+    public  boolean launch () {
 
         return true;
 
     }
 
-    public static boolean land () {
+    public  boolean land () {
 
         return true;
+
+
 
     }
 
