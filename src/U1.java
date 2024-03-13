@@ -12,13 +12,17 @@ public class U1 extends Rocket {
 
     public  boolean launch () {
 
-        return true;
+        chanceOfExplosion = 0.05 * (double) ( (getCurrentWeight() - getWeight()) / (getMaxWeight() - getWeight()));
+
+        return chanceOfExplosion <= Math.random() * 0.1;
 
     }
 
     public  boolean land () {
 
-        return true;
+        chanceOfLandingFailure = 0.01 * (double) ( (getCurrentWeight() - getWeight()) / (getMaxWeight() - getWeight()));
+
+        return chanceOfLandingFailure <= Math.random() * 0.1;
 
     }
 

@@ -7,31 +7,35 @@ import java.io.File;
 public class Simulation {
 
 
-    // creating arraylist of items from textfile
+    // creating arraylist of items from text file
 
     ArrayList <Item> loadItems () throws FileNotFoundException {
 
-        ArrayList <Item> phase1 = new ArrayList<>();
+        ArrayList <Item> items = new ArrayList<>();
 
         Scanner itemsFile1 = new Scanner(new File("/home/amanda/Desktop/Phase_1"));
 
+        while(itemsFile1.hasNext()) {
 
-//        while (itemsFile1.hasNext()) {
-//
-//        }
+            String line = itemsFile1.nextLine();
+            String [] singleItem = line.split("=");
+            items.add(new Item(singleItem[0], Integer.valueOf(singleItem[1])));
+        }
 
-        return phase1;
+
+        return items;
     }
 
-    public static void loadU1 (){
+    public  void loadU1 (){
+
 
     }
 
-    public static void loadU2 () {
+    public  void loadU2 () {
 
     }
 
-    public static void runSimulation () {
+    public  void runSimulation () {
 
     }
 

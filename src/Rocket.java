@@ -4,8 +4,8 @@ public class Rocket implements SpaceShip {
     private int weight;
     private int maxWeight;
     private int currentWeight;
-    private double chanceOfExplosion;
-    private double chanceOfLandingFailure;
+    double chanceOfExplosion;
+    double chanceOfLandingFailure;
 
     // methods
 
@@ -23,11 +23,14 @@ public class Rocket implements SpaceShip {
 
     public  boolean canCarry (Item item) {
 
-        return true;
+        return item.getWeight() + getCurrentWeight() <= getMaxWeight();
 
     }
 
     public  void carry (Item item) {
+
+        currentWeight += item.getWeight();
+        setCurrentWeight(currentWeight);
 
     }
 

@@ -12,11 +12,17 @@ public class U2 extends Rocket {
 
     public  boolean launch () {
 
+        chanceOfExplosion = 0.04 * (double) ( (getCurrentWeight() - getWeight()) / (getMaxWeight() - getWeight()));
+
+
         return true;
 
     }
 
     public  boolean land () {
+
+        chanceOfLandingFailure = 0.08 * (double) ( (getCurrentWeight() - getWeight()) / (getMaxWeight() - getWeight()));
+
 
         return true;
 

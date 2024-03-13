@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8e71b8-a2f4-4d2c-abf1-e3754d8844ad" name="Changes" comment="new changes to classes">
+    <list default="true" id="7f8e71b8-a2f4-4d2c-abf1-e3754d8844ad" name="Changes" comment="changes in Rocket/Simulation/Spaceship class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rocket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpaceShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpaceShip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/U1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/U1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/U2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/U2.java" afterDir="false" />
     </list>
@@ -93,7 +93,9 @@
       <workItem from="1710069261477" duration="1885000" />
       <workItem from="1710075368411" duration="1918000" />
       <workItem from="1710140837541" duration="23336000" />
-      <workItem from="1710241322740" duration="661000" />
+      <workItem from="1710241322740" duration="6749000" />
+      <workItem from="1710256097010" duration="865000" />
+      <workItem from="1710349672745" duration="2495000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit - overall project plan">
       <option name="closed" value="true" />
@@ -119,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710230572800</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changes in Rocket/Simulation/Spaceship class">
+      <option name="closed" value="true" />
+      <created>1710242048457</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710242048457</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit - overall project plan" />
     <MESSAGE value="new changes to classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="new changes to classes" />
+    <MESSAGE value="changes in Rocket/Simulation/Spaceship class" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes in Rocket/Simulation/Spaceship class" />
   </component>
 </project>
