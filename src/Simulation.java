@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -17,27 +18,50 @@ public class Simulation {
 
         while(itemsFile1.hasNext()) {
 
-            String line = itemsFile1.nextLine();
-            String [] singleItem = line.split("=");
-            items.add(new Item(singleItem[0], Integer.valueOf(singleItem[1])));
-        }
+            Item item = new Item();
 
+            String separateLine = itemsFile1.nextLine();
+            String [] singleItem = separateLine.split("=");
+            item.setName(singleItem[0]);
+            item.setWeight(Integer.parseInt(singleItem[1]));
+
+
+            items.add(item);
+
+            // test items in ArrayList
+            System.out.println(item.getWeight());
+            System.out.println(item.getName());
+
+
+
+        }
 
         return items;
     }
 
-    public  void loadU1 (){
+    public ArrayList <Rocket> loadU1 (ArrayList <Item> items) {
+
+        ArrayList <Rocket> rockets = new ArrayList<>();
+        Rocket rocketU1 = new U1();
+
+        
+
+
+        return rockets;
+    }
+
+
+    public ArrayList <Rocket> loadU2 (ArrayList <Item> items) {
+
+        ArrayList <Rocket> rockets = new ArrayList<>();
+
+        return rockets;
+
+    }
+
+    public  void runSimulation (ArrayList<Rocket> rockets) {
 
 
     }
 
-    public  void loadU2 () {
-
     }
-
-    public  void runSimulation () {
-
-    }
-
-
-}
