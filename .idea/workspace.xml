@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7f8e71b8-a2f4-4d2c-abf1-e3754d8844ad" name="Changes" comment="adding items from text file and creating objects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simulation.java" afterDir="false" />
     </list>
@@ -93,7 +94,9 @@
       <workItem from="1710241322740" duration="6749000" />
       <workItem from="1710256097010" duration="865000" />
       <workItem from="1710349672745" duration="6162000" />
-      <workItem from="1710405227629" duration="8057000" />
+      <workItem from="1710405227629" duration="12545000" />
+      <workItem from="1710493265304" duration="304000" />
+      <workItem from="1710493576106" duration="6151000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit - overall project plan">
       <option name="closed" value="true" />
