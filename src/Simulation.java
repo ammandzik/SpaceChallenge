@@ -55,6 +55,9 @@ public class Simulation {
                 rocketU1.carry(item);
             }
         }
+        if (rocketU1.getCurrentWeight() > 10000 && rocketU1.getCurrentWeight() < 18000) {
+            rocketsU1.add(rocketU1);
+        }
 
         return rocketsU1;
     }
@@ -75,8 +78,10 @@ public class Simulation {
                 rocketU2.carry(item);
             }
         }
+        if (rocketU2.getCurrentWeight() > 18000 && rocketU2.getCurrentWeight() < 29000) {
+            rocketsU2.add(rocketU2);
 
-
+        }
         return rocketsU2;
     }
 
