@@ -2,7 +2,7 @@ public class U2 extends Rocket {
 
     U2 () {
 
-        setCost(120000);
+        setCost(120);
         setWeight(18000);
         setMaxWeight(29000);
         setCurrentWeight(18000);
