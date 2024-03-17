@@ -37,10 +37,10 @@ public class Main {
 
 
 
-        System.out.println("Total budget for U1 rockets is " + totalBudgetForU1+"mln $"+ " and for U2 rockets " + totalBudgetForU2+"mln $");
+        System.out.println("Total budget for U1 rockets is " + totalBudgetForU1+"mln $"+ " & for U2 rockets " + totalBudgetForU2+"mln $");
 
-        Rocket rocketX = new U1();
-        System.out.println(rocketX.land());
+//        Rocket rocketX = new U1();
+//        System.out.println(rocketX.land());
 
 
 

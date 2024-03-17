@@ -84,12 +84,13 @@ public class Simulation {
     public  int runSimulation (ArrayList<Rocket> rockets) {
 
         int totalBudget = 0;
+        int crashed =0;
 
         for (Rocket rocket : rockets) {
 
             if (!rocket.launch() || (!rocket.land())) {
 
-                totalBudget += rocket.getCost();
+                totalBudget += rocket.getCost() *2 ;
 
             } else {
 
