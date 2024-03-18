@@ -30,7 +30,7 @@ public class Simulation {
 
             items.add(item);
 
-             // test items in ArrayList
+            // test items in ArrayList
 //            System.out.println(item.getWeight());
 //            System.out.println(item.getName());
 
@@ -40,7 +40,7 @@ public class Simulation {
         return items;
     }
 
-    public ArrayList<Rocket> loadU1 (ArrayList<Item> items) {
+    public ArrayList<Rocket> loadU1(ArrayList<Item> items) {
 
         ArrayList<Rocket> rocketsU1 = new ArrayList<>();
         Rocket rocketU1 = new U1();
@@ -63,7 +63,7 @@ public class Simulation {
     }
 
 
-    public ArrayList<Rocket> loadU2 (ArrayList<Item> items) {
+    public ArrayList<Rocket> loadU2(ArrayList<Item> items) {
 
         ArrayList<Rocket> rocketsU2 = new ArrayList<>();
         Rocket rocketU2 = new U2();
@@ -85,26 +85,27 @@ public class Simulation {
         return rocketsU2;
     }
 
-// loop through all items in ArrayList rockets
-    public  int runSimulation (ArrayList<Rocket> rockets) {
+    // loop through all items in ArrayList rockets
+    public int runSimulation(ArrayList<Rocket> rockets) {
 
         int totalBudget = 0;
-        int crashed =0;
 
-        for (Rocket rocket : rockets) {
 
-            if (!rocket.launch() || (!rocket.land())) {
+            for (Rocket rocket : rockets) {
 
-                totalBudget += rocket.getCost() *2 ;
+                do {
+                    totalBudget += rocket.getCost();
+                }
+                while ((!rocket.land()) || (!rocket.launch()));
 
-            } else {
+                }
 
-                totalBudget += rocket.getCost();
-            }
+            return totalBudget;
 
         }
-        return totalBudget;
 
     }
 
-}
+
+
+
